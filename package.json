@@ -1,0 +1,51 @@
+{
+  "name": "snapterest",
+  "version": "1.0.0",
+  "description": "A Web application that allows you to discover and collect public photos posted on Twitter. Think of it as Pinterest with the only source of picture being Twitter.",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "eslint --ext .js --ext .jsx ./source & jest --noStackTrace"
+  },
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "collectCoverage": true,
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-addons-test-utils",
+      "<rootDir>/node_modules/fbjs",
+      "<rootDir>/node_modules/babel-runtime"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "babel-jest": "^14.1.0",
+    "babel-plugin-transform-runtime": "^6.12.0",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "eslint": "^3.3.0",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.13.0",
+    "eslint-plugin-jsx-a11y": "^2.1.0",
+    "eslint-plugin-modules": "^1.1.1",
+    "eslint-plugin-react": "^6.1.0",
+    "gulp": "^3.9.1",
+    "jest-cli": "^14.1.0",
+    "react-addons-test-utils": "^15.3.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.13.0",
+    "babel-runtime": "^6.11.6",
+    "flux": "^2.1.1",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "snapkite-stream-client": "^1.0.3"
+  }
+}
